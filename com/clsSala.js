@@ -6,7 +6,7 @@ class clsSala{
         this.asientos=[]
         this.containerHTML= document.getElementById("grid");
         this.CreateAsientos();
-        this.DrawAsientos();
+        
     }
 
     CreateAsientos(){
@@ -22,7 +22,6 @@ class clsSala{
             var tA=this.asientos[i];
             var tCell=tA.DRAW();
             this.containerHTML.appendChild(tCell);
-
 
         /*
         for (var i=0; i<this.num_asientos; i++){

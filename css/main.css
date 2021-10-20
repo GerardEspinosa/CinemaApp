@@ -9,7 +9,7 @@
     #grid { grid-template-columns: auto; }
   }
   /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell { padding: 10px; }
+  .head, .cell, .cell_red, .cell_green{ padding: 10px; }
   .head {
     font-weight: bold;
     border: 1px solid #f18e8e;
@@ -18,4 +18,14 @@
   .cell {
     border: 1px solid #c2ba3c;
     background: #f8ffde;
+  }
+
+  .cell_red {
+    border: 1px solid #c2ba3c;
+    background: red;
+  }
+
+  .cell_green {
+    border: 1px solid #c2ba3c;
+    background: green;
   }

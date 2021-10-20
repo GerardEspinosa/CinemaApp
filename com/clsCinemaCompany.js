@@ -6,7 +6,7 @@ class clsCinemaCompany{
         //this.d = new clsDebug();
         this.CreateCines();
         //this.CreateFrontEnd();
-        this.d.log("Objeto de la clase clsMyGame creada");
+        //this.d.log("Objeto de la clase clsMyGame creada");
     }
     totext (){
         this.d.log("totext method");

@@ -1,5 +1,5 @@
-var mG
-var d
+var mG;
+var d;
 /*
 console.log("Hola como estás?");
 
@@ -19,4 +19,5 @@ d.log();
          mG= new clsCinemaCompany();
      }
  }
+ 
 
