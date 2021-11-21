@@ -4,12 +4,17 @@
     grid-template-columns: auto auto auto; 
     grid-gap: 10px;
   }
+#grid-peliculas{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 50px;
+  }
   /* (B) 1 COL ON SMALL SCREENS */
   @media screen and (max-width:768px) {
     #grid { grid-template-columns: auto; }
   }
   /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell, .cell_red, .cell_green{ padding: 10px; }
+  .head, .cell, .cell_red, .cell_green, .sala{ padding: 10px; }
   .head {
     font-weight: bold;
     border: 1px solid #f18e8e;
@@ -28,4 +33,17 @@
   .cell_green {
     border: 1px solid #c2ba3c;
     background: green;
+  }
+
+  .sala {
+    border: 1px solid #c23c3c;
+    background: white;
+  }
+
+  .cartelera{
+    border: 1px solid black;
+    background: turquoise;
+    padding: 30px;
+    text-align: center;
+
   }

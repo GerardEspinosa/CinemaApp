@@ -1,11 +1,12 @@
 class clsAsiento{
     constructor(pNumberAsiento){
 
-        this.number=pNumberAsiento
+        this.number=pNumberAsiento;
         this._occupied=Math.round(Math.random()); //0=libre 1=ocupado 2=pendiente de pago
-        console.log(this.IsOccupied())
-        this.x;
-        this.y;
+        console.log(this.IsOccupied());
+        this.reservado=[];
+        this.x=0;
+        this.y=0;
 
     }
 ////////////////////////////////////////
@@ -24,10 +25,16 @@ class clsAsiento{
         } else{
             cell.className="cell";
         }
-
+    
         cell.addEventListener("click",this.onclick.bind(this)); //="alert('hola');";
 
         cell.id="a"+this.number;
+
+        var comp=localStorage.getItem(JSON.stringify(cell.id));
+        if (cell.id==comp){
+            cell.className="cell_green";
+        }
+
         return cell;
     }
 ///////////////////////////////////////
@@ -52,5 +59,7 @@ class clsAsiento{
                 this.html_cell.className="cell";
                 break;
         }
+        localStorage.setItem(JSON.stringify(this.html_cell.id), this.html_cell.id);
     }
+    
 }

@@ -14,11 +14,11 @@ class clsCinemaCompany{
     CreateCines(){
         this.cine=new clsCine();
     }
-    CreteFrontEnd(){
+    /*CreteFrontEnd(){
         var data= [
             ["A"],["B"],["C"],
             ["D"],["E"],["F"],
             ["G"],["H"],["I"]
         ];
-    }
+    }*/
 }
